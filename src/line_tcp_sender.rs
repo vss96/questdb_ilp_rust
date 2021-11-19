@@ -1,9 +1,7 @@
 use crate::{LineSenderOperations, Result};
-use log::{debug, error};
 use std::io::{BufReader, BufWriter, Write};
 use std::net::{SocketAddr, TcpStream};
 
-#[derive(Debug)]
 pub struct LineTcpSender {
     tcp_reader: BufReader<TcpStream>,
     tcp_writer: BufWriter<TcpStream>,

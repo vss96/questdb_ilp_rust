@@ -1,5 +1,4 @@
 use crate::{LineSenderOperations, Result};
-use log::{debug, error};
 use std::net::{SocketAddr, UdpSocket};
 
 pub struct LineUdpSender {
